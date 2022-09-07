@@ -4,17 +4,19 @@
 
 #include <math.h>
 #include <stdio.h>
+#include<stdlib.h>
 
 int main()
 {
-    int n, opcion;
+    int opcion;
+    float a,b,res;
 
     do
     {
         printf( "\n   1. Calcular suma.");
         printf( "\n   2. Calcular resta.");
-        printf( "\n   3. Calcular multiplicación.");
-        printf( "\n   4. Calcular división.");
+        printf( "\n   3. Calcular multiplicacion.");
+        printf( "\n   4. Calcular division.");
         printf( "\n   5. Salir.");
         printf( "\n\n   Introduzca opcion (1-5): ");
 
@@ -25,62 +27,73 @@ int main()
         switch ( opcion )
         {
             case 1:
-	            int a, b, sum;
-	
+	         //   float a, b, sum;
+	            system("cls");
 	            printf("Suma de 2 numeros");
 	            printf("\n\nIngresa el primer valor: ");
-	            scanf("%d", &a);
+	            scanf("%f", &a);
 	            printf("Ingresa el segundo valor: ");
-	            scanf("%d", &b);
+	            scanf("%f", &b);
 	
-	            sum = a + b;
+	            res = a + b;
 	
-	            printf("\n\nEl resultado es: %d", sum);
+	            printf("\n\nEl resultado es: %.2f\n\n", res);
                     break;
 
              case 2:
-             	int a, b, res;
-	
+            // 	float a, b, res;
+	            system("cls");
 	            printf("Resta de 2 numeros");
 	            printf("\n\nIngresa el primer valor: ");
-	            scanf("%d", &a);
+	            scanf("%f", &a);
 	            printf("Ingresa el segundo valor: ");
-	            scanf("%d", &b);
+	            scanf("%f", &b);
 	
 	            res = a - b;
 	
-	            printf("\n\nEl resultado es: %d", res);
+	            printf("\n\nEl resultado es: %.2f\n\n", res);
                     break;
 
              case 3:
+	        //   float a,b,res;
+               system("cls");
+               printf("Multiplicacion de 2 numeros");
+		       printf("\n\nIngrese el primer numero: ");
+		       scanf("%f",&a);
+		       printf("Ingrese el segundo numero: ");
+		       scanf("%f",&b);
+		
+		       res = a * b;
+		
+		      printf("\n\nEl resultado de la Multiplicacion es: %.2f\n\n",res);
                     break;
              
              case 4:
-                 int a, b;
-                 float resultado;
-    
-                    printf("Ingrese el numero 1: ");
-                    scanf("%i", &a);
-    
-                    printf("Ingrese el numero 2: ");
-                    scanf("%i", &b);
+            //   float resultado,a,b;
+               system("cls");
+               printf("Division de 2 numeros");
+               printf("\n\nIngrese el numero 1: ");
+               scanf("%f", &a);
+               printf("Ingrese el numero 2: ");
+               scanf("%f", &b);
 
-                    if(b == 0){
-                        printf("el dividendo no puede ser cero");
-                    }else{
-                        resultado = a / b;
-                    }
+                if(b == 0){
+                  printf("\n\nEl dividendo no puede ser cero\n\n");
+                  break;
+                }else{
+                  res = a / b;
+                }
 
-
-    
-
-                    printf("El resultado es: %f", resultado);  
+                printf("\n\nEl resultado es: %.2f\n\n",res);  
                     break;
+             case 5: 
+                    break;
+             default: 
+                system("cls");
+                printf("\n\nOpcion invalida!!!\n\n");
          }
-
          /* Fin del anidamiento */
-
-    } while ( opcion != 5);
+    } while ( opcion !=5);
 
     return 0;
 }
