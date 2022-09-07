@@ -28,6 +28,17 @@ int main()
                     break;
 
              case 2:
+             	int a, b, res;
+	
+	            printf("Resta de 2 numeros");
+	            printf("\n\nIngresa el primer valor: ");
+	            scanf("%d", &a);
+	            printf("Ingresa el segundo valor: ");
+	            scanf("%d", &b);
+	
+	            res = a - b;
+	
+	            printf("\n\nEl resultado es: %d", res);
                     break;
 
              case 3:
