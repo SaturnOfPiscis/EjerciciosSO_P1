@@ -1,1 +1,5 @@
 // Programa Calculadora Equipo 4
+//INSTITUTO POLITECNICO NACIONAL
+
+#include <stdio.h>
+#include <stdlib.h>
