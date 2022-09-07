@@ -3,3 +3,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
+
+float multiplicacion(float A, float B,){
+float res;
+printf("inserta el valor de A:");
+scanf("%f",&A);
+printf
+}
