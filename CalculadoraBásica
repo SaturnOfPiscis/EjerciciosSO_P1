@@ -5,8 +5,7 @@
 #include <stdlib.h>
 
 int division(){
-    int a, b;
-    float resultado;
+    float a, b, resultado;
     
     printf("Ingrese el numero 1: ");
     scanf("%i", &a);
