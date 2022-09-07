@@ -4,6 +4,7 @@
 
 #include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -42,4 +43,8 @@ int main()
     } while ( opcion != 5);
 
     return 0;
+}
+
+float sumar(float n1, float n2) {
+    return n1 + n2;
 }
