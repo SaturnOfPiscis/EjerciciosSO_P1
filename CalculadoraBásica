@@ -1,13 +1,59 @@
 // Programa Calculadora Equipo 4
 //INSTITUTO POLITECNICO NACIONAL
 
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+void resta();
+
+
+int main()
+{
+    int n, opcion;
+
+    do
+    {
+        printf( "\n   1. Calcular suma.");
+        printf( "\n   2. Calcular resta.");
+        printf( "\n   3. Calcular multiplicación.");
+        printf( "\n   4. Calcular división.");
+        printf( "\n   5. Salir.");
+        printf( "\n\n   Introduzca opcion (1-5): ");
+
+        scanf( "%d", &opcion );
+
+        /* Inicio del anidamiento */
+
+        switch ( opcion )
+        {
+             case 1:
+                    break;
+
+             case 2:
+	     	    resta();
+                    break;
+
+             case 3:
+                    break;
+             
+             case 4:
+                    break;
+         }
+
+         /* Fin del anidamiento */
+
+    } while ( opcion != 5);
+
+    return 0;
+}
+
+
 
 void resta()
 {
 	int a, b, res;
-	
+	system("cls");
 	printf("Resta de 2 numeros");
 	printf("\n\nIngresa el primer valor: ");
 	scanf("%d", &a);
