@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 
-void multiplicacion(float A, float B){
+void multiplicacion(){
 float res,A,B;
 printf("inserta el valor de A:");
 scanf("%f",&A);
