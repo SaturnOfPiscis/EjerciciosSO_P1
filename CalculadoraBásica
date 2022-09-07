@@ -4,14 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int division(){
+void division(){
     float a, b, resultado;
     
     printf("Ingrese el numero 1: ");
-    scanf("%i", &a);
+    scanf("%f", &a);
     
     printf("Ingrese el numero 2: ");
-    scanf("%i", &b);
+    scanf("%f", &b);
 
     if(b == 0){
         printf("el dividendo no puede ser cero");
@@ -22,7 +22,7 @@ int division(){
 
     
 
-     printf("El resultado es: %f", resultado);  
+     printf("El resultado es: %f\n", resultado);  
 
 
 }
