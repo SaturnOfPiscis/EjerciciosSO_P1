@@ -9,10 +9,10 @@ void division()
     int a, b , resultado;
     
     printf("Ingrese el numero 1: ");
-    scanf("%d", &a);
+    scanf("%i", &a);
     
     printf("Ingrese el numero 2: ");
-    scanf("%d", &b);
+    scanf("%i", &b);
         
     resultado = a / b;
     
