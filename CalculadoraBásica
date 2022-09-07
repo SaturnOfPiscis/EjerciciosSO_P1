@@ -4,12 +4,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int division(int a , int b)
+void division()
 {
-    int resultado;
+    int a, b , resultado;
     
+    printf("Ingrese el numero 1: ");
+    scanf("%d", &a);
+    
+    printf("Ingrese el numero 2: ");
+    scanf("%d", &b);
+        
     resultado = a / b;
     
-    return resultado;   
+    printf("El resultado es: %d", resultado);       
 
 }
