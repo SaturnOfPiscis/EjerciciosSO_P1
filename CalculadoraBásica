@@ -6,7 +6,8 @@
 
 void division()
 {
-    int a, b , resultado;
+    int a, b;
+    float resultado;
     
     printf("Ingrese el numero 1: ");
     scanf("%i", &a);
@@ -16,6 +17,6 @@ void division()
         
     resultado = a / b;
     
-    printf("El resultado es: %d", resultado);       
+    printf("El resultado es: %f", resultado);       
 
 }
