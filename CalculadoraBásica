@@ -3,3 +3,21 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
+int division(int a, int b){
+    int result= 0;
+
+    if(b == 0){
+        printf("el dividendo no puede ser cero");
+    }else{
+        result = a / b;
+    }
+
+
+    
+
+    printf("%d" , result);
+
+    return result;
+
+}
