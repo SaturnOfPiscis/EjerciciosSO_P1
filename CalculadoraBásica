@@ -34,6 +34,25 @@ int main()
                     break;
              
              case 4:
+                 int a, b;
+                 float resultado;
+    
+                    printf("Ingrese el numero 1: ");
+                    scanf("%i", &a);
+    
+                    printf("Ingrese el numero 2: ");
+                    scanf("%i", &b);
+
+                    if(b == 0){
+                        printf("el dividendo no puede ser cero");
+                    }else{
+                        resultado = a / b;
+                    }
+
+
+    
+
+                    printf("El resultado es: %f", resultado);  
                     break;
          }
 
