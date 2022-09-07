@@ -3,3 +3,13 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
+int division(int a , int b)
+{
+    int resultado;
+    
+    resultado = a / b;
+    
+    return resultado;   
+
+}
