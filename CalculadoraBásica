@@ -5,9 +5,14 @@
 #include <stdlib.h>
 
 
-float multiplicacion(){
-float A, B, res;
+void multiplicacion(float A, float B){
+float res,A,B;
 printf("inserta el valor de A:");
 scanf("%f",&A);
-printf
+printf("Inserte el valor de B: ");
+scanf("%f",&B);
+
+res = A * B;
+
+printf("El resultado es: %f",res);
 }
