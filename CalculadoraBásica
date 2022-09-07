@@ -25,6 +25,17 @@ int main()
         switch ( opcion )
         {
             case 1:
+	            int a, b, sum;
+	
+	            printf("Suma de 2 numeros");
+	            printf("\n\nIngresa el primer valor: ");
+	            scanf("%d", &a);
+	            printf("Ingresa el segundo valor: ");
+	            scanf("%d", &b);
+	
+	            sum = a + b;
+	
+	            printf("\n\nEl resultado es: %d", sum);
                     break;
 
              case 2:
